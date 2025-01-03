@@ -225,7 +225,12 @@ const SalesOrdersTable = () => {
         >
           Create Order
         </button>
-        <ForClientOrderModal isOpen={isModalOpen} closeModal={closeModal} />
+        {isModalOpen && (
+        <ForClientOrderModal 
+          isOpen={isModalOpen} 
+          closeModal={closeModal} 
+        />
+      )}
       </div>
 
       {/* Tab navigation */}

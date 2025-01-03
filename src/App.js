@@ -19,6 +19,7 @@ import Layout from './components/Layout/Layout';
 
 import SuppliersTable from './components/Admin/Supplier/SuppliersTable';
 import WarehouseInventoryTable from './components/Admin/Warehouse/WarehouseInventoryTable';
+import OrderStatusTable from './components/Sales Executive/Order Create/OrderStatusTable';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="material-inward/:grnId" element={<MaterialInwardRegister />} />
             <Route path="purchase-order/:referenceNo" element={<ViewPurchaseOrder />} />
             <Route path="warehouse-inventory" element={<WarehouseInventoryTable />} />
+            <Route path="order/status-details" element={<OrderStatusTable />} />
            
            
           </Route>
